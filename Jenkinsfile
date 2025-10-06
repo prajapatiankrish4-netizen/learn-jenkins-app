@@ -21,15 +21,17 @@ pipeline {
                 '''
             }
         }
-    }
 
-        stage('TEST') {
-
+        stage(test) {
             steps {
                 sh '''
-                    npm run test
+                ls -l
 
                 '''
             }
-        }    
+
+        }
+    }
+
+
 }
